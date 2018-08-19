@@ -5,11 +5,8 @@ from collections import defaultdict
 import traci
 
 
-
-
-
 # Q table implementation (env.observation_space.n, env.action_space.n)
-agent_list = ["ag11", "ag21", "ag31"]
+agent_list = ["ag11", "ag21", "ag31", "ag12", "ag22", "ag32", "ag13", "ag23", "ag33"]
 env = environment(agent_list)
 
 ags = [agent(a_id) for a_id in agent_list ]
@@ -23,12 +20,12 @@ states_next = dict()
 ep_reward = 0
 
 
-for episode in range(1, 31):
+for episode in range(1, 201):
     done = False
     ep_reward, ep_counter = 0, 0
 
     # To render
-    if episode < 21:
+    if episode < 101:
         sumoBinary = "sumo"
         states_now = env.reset(sumoBinary)
     else:
