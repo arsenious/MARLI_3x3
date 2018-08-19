@@ -3,7 +3,7 @@
 <configuration>
     <input>
        <net-file value="3x3cross.net.xml"/>
-        <route-files value="3x3cross.rou.xml"/>        
+        <route-files value="3x3cross_allNS.rou.xml"/>
     </input>
 	<time>
         <begin value="0"/>

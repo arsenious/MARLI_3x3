@@ -3,16 +3,16 @@
 <routes>
     <vType accel="1.0" decel="5.0" id="Car" length="2.0" maxSpeed="30.0" sigma="0.0" />
 
-    <flow id="flowWEag11ag21ag31ag32ag33" color="1,1,0"  begin="0" end= "5000" probability="0.50" type="Car">
-    <route edges="L1_i ag11_W_i ag11_E_o ag21_W_i ag21_E_o ag31_W_i ag31_N_o ag32_S_i ag32_N_o ag33_S_i ag33_N_o U3_o"/>
+    <flow id="flowallWE1" color="1,0,0"  begin="0" end= "5000" probability="0.50" type="Car">
+    <route edges="L1_i ag11_W_i ag11_E_o ag21_W_i ag21_E_o ag31_W_i ag31_E_o R1_o"/>
     </flow>
 
-    <flow id="flowWEag12ag22ag23" color="1,0,0.5"  begin="0" end= "5000" probability="0.50" type="Car">
-    <route edges="L2_i ag12_W_i ag12_E_o ag22_W_i ag22_N_o ag23_S_i ag23_N_o U2_o"/>
+    <flow id="flowallWE2" color="1,0,0.5"  begin="0" end= "5000" probability="0.50" type="Car">
+    <route edges="L2_i ag12_W_i ag12_E_o ag22_W_i ag22_E_o ag32_W_i ag32_E_o R2_o"/>
     </flow>
 
-    <flow id="flowWEag13" color="1,0.5,1"  begin="0" end= "5000" probability="0.50" type="Car">
-    <route edges="L3_i ag13_W_i ag13_N_o U1_o"/>
+    <flow id="flowallWE3" color="0.5,1,0"  begin="0" end= "5000" probability="0.50" type="Car">
+    <route edges="L3_i ag13_W_i ag13_E_o ag23_W_i ag23_E_o ag33_W_i ag33_E_o R3_o"/>
     </flow>
 
 
