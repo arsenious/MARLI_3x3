@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+    <vType accel="1.0" decel="5.0" id="Car" length="2.0" maxSpeed="30.0" sigma="0.0" />
+
+    <flow id="flowWEag11ag21ag31" color="1,1,0"  begin="0" end= "5000" probability="0.50" type="Car">
+    <route edges="L1_i ag11_W_i ag11_E_o ag21_W_i ag21_E_o ag31_W_i ag31_E_o R1_o"/>
+    </flow>
+
+
+
+    <!--
+    <flow id="flowNS1st" color="0,1,0"  begin="0" end= "99999" probability="0.01" type="Car">
+    <route edges="0Ni 3Ni"/>
+    </flow>
+
+    <flow id="flowNS2nd" color="0,1,0"  begin="0" end= "99999" probability="0.01" type="Car">
+    <route edges="1Ni 4Ni"/>
+    </flow>
+
+    <flow id="flowNS3rd" color="0,1,0"  begin="0" end= "99999" probability="0.01" type="Car">
+    <route edges="2Ni 5Ni"/>
+    </flow>
+    -->
+</routes>
